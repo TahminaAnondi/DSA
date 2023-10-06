@@ -1,6 +1,6 @@
 package DSA;
 
-import java.util.*;
+
 public class buySellStock{
     public static void main(String args[]){
         int stockPrice[] = {7,1,5,3,6,4};
