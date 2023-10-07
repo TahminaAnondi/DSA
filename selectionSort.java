@@ -9,17 +9,21 @@ public class selectionSort {
         
         for(int i=0;i<unsortedArray.length-1;i++)
         {        
-            //Assume the current element    
-            int minIndex = i;
+            
+            int minIndex = i; //Assume the current position  is smaller
+            // Find the index of the smallest element in the unsorted portion
             for(int j=i+1;j<unsortedArray.length;j++){
+                // If we find a smaller element, update minIndex
                 if(unsortedArray[minIndex]>unsortedArray[j]){
                     minIndex = j;
                 }
             }
+            // Swap the smallest element (at minIndex) with the current element (at i)
                 int temp = unsortedArray[minIndex];
                 unsortedArray[minIndex] = unsortedArray[i];
                 unsortedArray[i] = temp;
         }
+        // Print the sorted array
         for(int i=0;i<unsortedArray.length;i++){
             System.out.print(unsortedArray[i]+", ");
         }
