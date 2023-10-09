@@ -25,6 +25,7 @@ public class bubbleSort {
         for(int i=0;i<5;i++){
             a[i] = sc.nextInt();
         }
-        ascendingBubbleSort(a);    
+        ascendingBubbleSort(a);   
+        sc.close(); 
     }
 }
